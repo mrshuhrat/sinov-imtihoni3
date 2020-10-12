@@ -1,0 +1,22 @@
+.social-media {
+  display: flex;
+  align-items: center;
+}
+
+.social-media__link {
+  margin-left: 13px;
+  display: inline-block;
+  transition: opacity 0.3s ease;
+}
+
+.social-media__link:hover {
+  opacity: 0.8;
+}
+
+.social-media__link:active {
+  opacity: 0.6;
+}
+
+.social-media__img {
+  display: block;
+}

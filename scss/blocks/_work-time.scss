@@ -1,0 +1,35 @@
+.work-time {
+  position: relative;
+  z-index: 1;
+}
+
+.work-time::before  {
+  position: absolute;
+  z-index: 1;
+  display: block;
+  width: 29px;
+  height: 29px;
+  content: "";
+  margin-right: 7px;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 100%;
+  background-image: url("../../img/clock-icon.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
+.work-time__text {
+  margin: 0;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #00B007;
+}
+
+.work-time__finish {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+}

@@ -1,0 +1,37 @@
+.sitenav {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  max-width: 1140px;
+  padding: 21px 33px 19px 29px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: $main-color;
+  border-radius: 5px;
+}
+
+.sitenav__list {
+  @include reset-list;
+  display: flex;
+}
+
+.sitenav__item {
+  margin-right: 35px;
+}
+
+.sitenav__link {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  line-height: 21px;
+  transition: color 0.3s ease;
+}
+
+.sitenav__link:hover {
+  color: #ffd600;
+}
+
+.sitenav__link:active {
+  opacity: 0.6;
+}

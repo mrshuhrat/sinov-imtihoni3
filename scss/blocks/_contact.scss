@@ -1,0 +1,52 @@
+.contact-wrapper {
+  min-width: 198px;
+}
+
+.contact {
+  margin-left: 36px;
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  text-decoration: none;
+  color: #272727;
+  transition: opacity 0.3s ease;
+}
+
+.contact:hover {
+  opacity: 0.8;
+}
+
+.contact:active {
+  opacity: 0.6;
+}
+
+.contact::before {
+  position: absolute;
+  z-index: 1;
+  display: block;
+  width: 29px;
+  height: 29px;
+  margin-right: 7px;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 100%;
+  content: "";
+  background-image: url("../img/phone-icon.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
+.contact__text {
+  margin: 0;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.contact__phone {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+  color: #272727;
+}
