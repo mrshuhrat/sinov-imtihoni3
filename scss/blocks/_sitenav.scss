@@ -96,9 +96,10 @@
     width: 100%;
   }
 
-  .open-js .sitenav__link:hover {
+  .open-js .sitenav__link:active {
     background-color: #ffd600;
     color: $main-color;
+    opacity: 1;
   }
 
   .open-js .social-media {

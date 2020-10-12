@@ -1,0 +1,153 @@
+.intro {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #272727;
+}
+
+.intro__img {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.intro__text {
+  position: absolute;
+  z-index: 1;
+  left: calc(50% - 570px);
+  top: 40%;
+  transform: translateY(-50%);
+}
+
+.intro__paragraph {
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.intro__heading {
+  max-width: 543px;
+  margin: 0;
+  margin-bottom: 27px;
+  font-size: 48px;
+  line-height: 56px;
+  text-transform: uppercase;
+}
+
+.intro__slider-btn {
+  position: absolute;
+  z-index: 1;
+  top: 75%;
+  left: calc(50% - 570px);
+}
+
+.intro__prev-btn {
+  display: inline-block;
+  width: 42px;
+  height: 70px;
+  border: none;
+  outline: none;
+  background-image: url("../img/btn-prev.png");
+  cursor: pointer;
+  margin-right: 9px;
+  border-radius: 5px;
+}
+
+.intro__prev-btn:hover {
+  opacity: 0.8;
+}
+
+.intro__prev-btn:active {
+  opacity: 0.6;
+}
+
+.intro__next-btn {
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  outline: none;
+  border: none;
+  background-image: url("../img/btn-next.png");
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.intro__next-btn:hover {
+  opacity: 0.8;
+}
+
+.intro__next-btn:active {
+  opacity: 0.6;
+}
+
+@include breakpoint-down (1170px) {
+  .intro__text {
+    left: calc(50% - 550px);
+  }
+
+  .intro__slider-btn {
+    left: calc(50% - 550px);
+  }
+}
+
+@include breakpoint-down (1110px) {
+  .intro__text {
+    left: calc(50% - 500px);
+  }
+
+  .intro__slider-btn {
+    left: calc(50% - 500px);
+  }
+}
+
+@include breakpoint-down (1010px) {
+  .intro__text {
+    left: calc(50% - 450px);
+  }
+
+  .intro__paragraph {
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  .intro__heading {
+    max-width: 450px;
+    font-size: 30px;
+    line-height: 35px;
+  }
+
+  .intro__slider-btn {
+    left: calc(50% - 450px);
+  }
+}
+
+@include breakpoint-down (905px) {
+  .intro__text {
+    left: calc(50% - 370px);
+  }
+
+  .intro__slider-btn {
+    left: calc(50% - 370px);
+  }
+}
+
+@include breakpoint-down (905px) {
+  .intro__text {
+    text-align: center;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .intro__heading {
+    max-width: 500px;
+    font-size: 30px;
+    line-height: 35px;
+  }
+
+  .intro__slider-btn {
+    left: calc(50% - 300px);
+  }
+}

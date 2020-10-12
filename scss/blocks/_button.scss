@@ -1,0 +1,23 @@
+.button {
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  display: inline-block;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  min-width: 265px;
+  font-size: 18px;
+  line-height: 21px;
+  background-color: $main-color;
+  color: #fff;
+  border-radius: 5px;
+  transition: opacity 0.3s ease;
+}
+
+.button:hover {
+  opacity: 0.8;
+}
+
+.button:active {
+  opacity: 0.6;
+}

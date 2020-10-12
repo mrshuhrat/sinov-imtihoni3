@@ -25,7 +25,7 @@
         <div class="contact-wrapper">
           <a class="contact" href="tel:+73422162227">
             <p class="contact__text">Contact us</p>
-            <span class="contact__phone" href="tel:+73422162227">+7(342)216-22-27</span>
+            <span class="contact__phone">+7(342)216-22-27</span>
           </a>
         </div>
 
@@ -93,9 +93,36 @@
   ======================= -->
   <main class="main">
 
-    <section>
+    <section class="intro">
+
+      <picture>  
+        <!-- max-width 375px -->
+        <source media="(max-width:375px)" srcset="img/intro-img-375.jpg 1x, img/intro-img-375@2x.jpg 2x">
+  
+        <!-- max-width 1024px -->
+        <source media="(max-width:1024px)" srcset="img/intro-img-1024.jpg 1x, img/intro-img-1024@2x.jpg 2x">
+  
+        <!-- Default image webp -->
+        <source type="image/webp" srcset="img/intro-img.webp 1x, img/intro-img@2x.webp 2x">
+  
+        <!-- Default image -->
+        <img class="intro__img" src="img/intro-img.jpg" srcset="img/intro-img.jpg 1x, img/intro-img.jpg 2x" alt="intro img" width="1920" height="900">
+      </picture>
+
+      <div class="intro__slider-btn">
+        <button class="intro__prev-btn">
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="intro__next-btn">
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
       <div class="container">
-        
+        <div class="intro__text">
+          <p class="intro__paragraph">Modern technology and expert-class dentists</p>
+          <h2 class="intro__heading">get a brilliant smile for every day</h2>
+          <a class="button" href="#">Get</a>
+        </div>
       </div>
     </section>
 
