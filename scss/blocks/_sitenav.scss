@@ -17,6 +17,13 @@
   border-radius: 5px;
 }
 
+.sitenav__nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
 .sitenav__list {
   @include reset-list;
   display: flex;
@@ -55,7 +62,7 @@
   }
 }
 
-@include breakpoint-down (865px) {
+@include breakpoint-down (905px) {
   .sitenav__list {
     display: none;
   }
@@ -73,6 +80,7 @@
 
   .open-js .sitenav__list {
     display: block;
+    width: 100%;
   }
 
   .open-js .sitenav__item {
@@ -94,6 +102,45 @@
   }
 
   .open-js .social-media {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+  }
+
+  .nojs .sitenav__nav {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: $main-color;
+  }
+
+  .nojs .sitenav__list {
+    display: block;
+    width: 100%;
+  }
+
+  .nojs .sitenav__item {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #ffd600;
+  }
+
+  .nojs .sitenav__link {
+    display: flex;
+    justify-content: center;
+    padding: 24px 0;
+    width: 100%;
+  }
+
+  .nojs .sitenav__link:hover {
+    background-color: #ffd600;
+    color: $main-color;
+  }
+
+  .nojs .social-media {
     display: flex;
     flex-grow: 1;
     justify-content: center;

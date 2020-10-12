@@ -2,10 +2,11 @@
   display: none;
 }
 
-@include breakpoint-down (865px) {
-  .toggler-btn {
-    display: none;
-  }
+.toggler-btn {
+  display: none;
+}
+
+@include breakpoint-down (905px) {
 
   .toggler {
     display: block;
@@ -14,6 +15,7 @@
     border: none;
     outline: none;
     background: none;
+    flex-shrink: 0;
     background-image: url("../../img/gamburger.png");
     background-repeat: no-repeat;
     background-size: contain;
@@ -21,7 +23,39 @@
     cursor: pointer;
   }
 
+  .toggler:hover {
+    opacity: 0.8;
+  }
+
+  .toggler:active {
+    opacity: 0.6;
+  }
+
   .toggler__close {
     background-image: url("../img/close.png");
+  }
+
+  .toggler__close:hover {
+    opacity: 0.8;
+  }
+
+  .toggler__close:active {
+    opacity: 0.8;
+  }
+
+
+  .nojs .toggler {
+    display: none;
+    width: 25px;
+    height: 25px;
+    border: none;
+    outline: none;
+    background: none;
+    flex-shrink: 0;
+    background-image: url("../../img/gamburger.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    cursor: pointer;
   }
 }

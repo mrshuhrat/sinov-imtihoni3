@@ -21,7 +21,7 @@
   display: block;
 }
 
-@include breakpoint-down (865px) {
+@include breakpoint-down (905px) {
   .social-media {
     display: none;
   }
