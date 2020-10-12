@@ -6,3 +6,9 @@
   justify-content: space-between;
   color: #272727;
 }
+
+@include breakpoint-down (1024px) {
+  .header-top {
+    display: none;
+  }
+}

@@ -1,0 +1,27 @@
+.toggler {
+  display: none;
+}
+
+@include breakpoint-down (865px) {
+  .toggler-btn {
+    display: none;
+  }
+
+  .toggler {
+    display: block;
+    width: 25px;
+    height: 25px;
+    border: none;
+    outline: none;
+    background: none;
+    background-image: url("../../img/gamburger.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    cursor: pointer;
+  }
+
+  .toggler__close {
+    background-image: url("../img/close.png");
+  }
+}

@@ -18,9 +18,16 @@ body {
   font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
   line-height: 1.5;
+  background-color: #eee;
 }
 
 img {
   max-width: 100%;
   height: auto;
+}
+
+@include breakpoint-down (1024px) {
+  body {
+    padding-top: 68px;
+  }
 }

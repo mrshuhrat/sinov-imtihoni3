@@ -1,0 +1,23 @@
+.sitenav-logo {
+  display: none;
+  margin-right: 40px;
+  transition: opacity 0.3s ease;
+}
+
+.sitenav-logo:hover {
+  opacity: 0.8;
+}
+
+.sitenav-logo:active {
+  opacity: 0.6;
+}
+
+.sitenav-logo__img {
+  display: block;
+}
+
+@include breakpoint-down (1024px) {
+  .sitenav-logo {
+    display: block;
+  }
+}

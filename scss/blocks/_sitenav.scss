@@ -1,8 +1,14 @@
+.sitenav-wrapper {
+  position: relative;
+  z-index: 1;
+  max-width: 1140px;
+}
+
 .sitenav {
   position: absolute;
+  margin-right: 20px;
   z-index: 1;
   width: 100%;
-  max-width: 1140px;
   padding: 21px 33px 19px 29px;
   display: flex;
   align-items: center;
@@ -14,6 +20,7 @@
 .sitenav__list {
   @include reset-list;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .sitenav__item {
@@ -34,4 +41,61 @@
 
 .sitenav__link:active {
   opacity: 0.6;
+}
+
+@include breakpoint-down (1024px) {
+  .sitenav-wrapper {
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+
+  .sitenav {
+    left: 0;
+    border-radius: 0;
+  }
+}
+
+@include breakpoint-down (865px) {
+  .sitenav__list {
+    display: none;
+  }
+
+  .open-js .sitenav__nav {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: $main-color;
+  }
+
+  .open-js .sitenav__list {
+    display: block;
+  }
+
+  .open-js .sitenav__item {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #ffd600;
+  }
+
+  .open-js .sitenav__link {
+    display: flex;
+    justify-content: center;
+    padding: 24px 0;
+    width: 100%;
+  }
+
+  .open-js .sitenav__link:hover {
+    background-color: #ffd600;
+    color: $main-color;
+  }
+
+  .open-js .social-media {
+    display: flex;
+    margin-top: auto;
+    justify-content: center;
+  }
 }

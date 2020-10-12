@@ -20,3 +20,9 @@
 .social-media__img {
   display: block;
 }
+
+@include breakpoint-down (865px) {
+  .social-media {
+    display: none;
+  }
+}
