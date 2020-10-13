@@ -147,6 +147,7 @@
   }
 
   .intro__slider-btn {
+    top: 70%;
     left: calc(50% - 350px);
   }
 
@@ -157,6 +158,7 @@
 
 @include breakpoint-down (730px) {
   .intro__slider-btn {
+    top: 65%;
     left: calc(50% - 300px);
   }
 
@@ -172,6 +174,7 @@
 @include breakpoint-down (605px) {
   
   .intro__slider-btn {
+    top: 60%;
     left: calc(50% - 230px);
   }
 }
@@ -179,11 +182,16 @@
 @include breakpoint-down (470px) {
   
   .intro__slider-btn {
+    top: 50%;
     left: calc(50% - 170px);
   }
 }
 
 @include breakpoint-down (375px) {
+
+  .intro__slider-btn {
+    top: 60%;
+  }
 
   .intro__paragraph {
     max-width: 230px;

@@ -52,36 +52,38 @@
           <div class="sitenav__nav">
             <ul class="sitenav__list">
               <li class="sitenav__item">
-                <a class="sitenav__link" href="#">Services</a>
+                <a class="sitenav__link" href="#services">Services</a>
               </li>
               <li class="sitenav__item">
-                <a class="sitenav__link" href="#">Advantages</a>
+                <a class="sitenav__link" href="#advantages">Advantages</a>
               </li>
               <li class="sitenav__item">
-                <a class="sitenav__link" href="#">Team</a>
+                <a class="sitenav__link" href="#team">Team</a>
               </li>
               <li class="sitenav__item">
-                <a class="sitenav__link" href="#">Reviews</a>
+                <a class="sitenav__link" href="#reviews">Reviews</a>
               </li>
               <li class="sitenav__item">
-                <a class="sitenav__link" href="#">Contacts</a>
+                <a class="sitenav__link" href="#contact">Contacts</a>
               </li>
             </ul>
     
             <div class="social-media">
-              <a class="social-media__link" href="#">
+              <a class="social-media__link" href="#" target="_blank" aria-label="wcontact">
                 <img class="social-media__img" src="img/wk.png" srcset="img/wk.png 1x, img/wk@2x.png 2x" alt="social media icon" width="28" height="28">
               </a>
-              <a class="social-media__link" href="#">
+              <a class="social-media__link" href="#" target="_blank" aria-label="instagram">
                 <img class="social-media__img" src="img/instagram.png" srcset="img/instagram.png 1x, img/instagram@2x.png 2x" alt="social media icon" width="16" height="16">
               </a>
-              <a class="social-media__link" href="#">
+              <a class="social-media__link" href="#" target="_blank" aria-label="twitter">
                 <img class="social-media__img" src="img/twitter.png" srcset="img/twitter.png 1x, img/twitter@2x.png 2x" alt="social media icon" width="18" height="18">
               </a>
             </div>
           </div>
 
-          <button class="toggler-btn"></button>
+          <button class="toggler-btn">
+            <span class="visually-hidden">Toggler button</span>
+          </button>
         </nav>
       </div>
     </div>
@@ -95,7 +97,7 @@
 
     <!-- INTRO-SECTIO  -->
     <section class="intro">
-
+      <h2 class="visually-hidden">Carusel</h2>
       <picture>  
         <!-- max-width 375px -->
         <source media="(max-width:375px)" srcset="img/intro-img-375.jpg 1x, img/intro-img-375@2x.jpg 2x">
@@ -151,7 +153,7 @@
           <label class="visually-hidden" for="phone-input">Phone</label>
           <input class="form__input" type="tel" name="phone" id="phone-input" placeholder="Phone" required>
 
-          <button class="form__button" type="button">Appointment</button>
+          <button class="form__button" type="submit">Appointment</button>
 
           <div class="form__chackbox-wrapper">
             <label class="form__chackbox-label" for="chackbox-input">
@@ -168,7 +170,7 @@
 
     <!-- SERVISES SECTION -->
 
-    <section class="services">
+    <section id="services" class="services">
       <div class="container">
         <div class="servisec__text-wrapper">
           <h2 class="services__heading">Services</h2>
@@ -226,7 +228,7 @@
 
     <!-- MODERN TECHNOLOGY SECTION -->
 
-    <section class="technology">
+    <section id="advantages" class="technology">
       <div class="container--wide technology__container">
 
         <img class="technology__img" src="img/technology-img.png" srcset="img/technology-img.png 1x, img/technology-img@2x.png 2x" alt="technology img" width="750" height="613">
@@ -260,7 +262,7 @@
 
     <!-- TEAM SECTION -->
 
-    <section class="tema">
+    <section id="team" class="tema">
       <div class="container team__container">
         <div class="team__info">
           <h2 class="team__heading">Professional team</h2>
@@ -320,7 +322,7 @@
 
     <!-- REVIEWS SECTION -->
 
-    <section class="reviews">
+    <section id="reviews" class="reviews">
       <div class="container reviews__container">
         <div class="reviews__info">
           <h2 class="reviews__heading">Reviews from our patients</h2>
@@ -354,7 +356,7 @@
 
     <!-- LOCATION SECTION -->
 
-    <section class="location">
+    <section id="contact" class="location">
       <div class="container">
         <div class="location__info">
           <h2 class="location__heading">Convenient location and working hours</h2>
@@ -388,7 +390,7 @@
           <label class="visually-hidden" for="location-phone-input">Phone</label>
           <input class="form__input" type="tel" name="phone" id="location-phone-input" placeholder="Phone" required>
 
-          <button class="form__button" type="button">Appointment</button>
+          <button class="form__button" type="submit">Appointment</button>
 
           <div class="form__chackbox-wrapper">
             <label class="form__chackbox-label" for="location-chackbox-input">
