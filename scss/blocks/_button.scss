@@ -12,6 +12,9 @@
   color: #fff;
   border-radius: 5px;
   transition: opacity 0.3s ease;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .button:hover {
