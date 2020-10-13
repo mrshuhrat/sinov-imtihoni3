@@ -1,0 +1,157 @@
+.reviews {
+  margin-bottom: 64px;
+}
+
+.reviews__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.reviews__info {
+  position: relative;
+  z-index: 1;
+  padding-top: 16px;
+  margin-bottom: 26px;
+  max-width: 465px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url("../img/sections-bg.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.reviews__info::before {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  width: 50px;
+  height: 3px;
+  content: "";
+  background-color: $secondary-color;
+}
+
+.reviews__heading {
+  margin: 0;
+  margin-bottom: 12px;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 42px;
+  color: #272727;
+}
+
+.reviews__mobile-heading {
+  display: none;
+}
+
+.reviews__text {
+  margin: 0;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  color: #4D4D4D;
+}
+
+.reviews__list {
+  @include reset-list;
+  display: flex;
+  margin-left: -15px;
+  margin-right: -15px;
+  margin-bottom: 40px;
+}
+
+.reviews__item {
+  max-width: 354px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.reviews__img {
+  display: block;
+  margin-bottom: 31px;
+}
+
+.reviews__name {
+  margin: 0;
+  margin-bottom: 13px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.reviews__info-text {
+  margin: 0;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 25px;
+  color: #4D4D4D;
+}
+
+.reviews__link {
+  max-width: 270px;
+  display: inline-block;
+  text-decoration: none;
+  padding: 24px 76px;
+  font-size: 18px;
+  line-height: 21px;
+  color: #4D4D4D;
+  border: 2px solid #0055B8;
+  border-radius: 5px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  transition: 0.3s ease;
+}
+
+.reviews__link:hover {
+  background-color: $main-color;
+  color: #fff;
+}
+
+.reviews__link:active {
+  opacity: 0.6;
+}
+
+@include breakpoint-down (905px) {
+  .reviews__name {
+    font-size: 16px;
+  }
+
+  .reviews__info-text {
+    font-size: 16px;
+  }
+}
+
+@include breakpoint-down (605px) {
+
+  .reviews__heading {
+    display: none;
+  }
+
+  .reviews__mobile-heading {
+    display: inline;
+  }
+
+  .mobile-none {
+    display: none;
+  }
+
+  .reviews__item {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .reviews__name {
+    font-size: 18px;
+  }
+
+  .reviews__info-text {
+    font-size: 18px;
+  }
+}
