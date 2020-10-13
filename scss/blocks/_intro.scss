@@ -136,6 +136,7 @@
 
 @include breakpoint-down (905px) {
   .intro__text {
+    position: relative;
     text-align: center;
     top: 100%;
     left: 50%;
@@ -143,7 +144,6 @@
   }
 
   .intro__heading {
-    // max-width: 500px;
     font-size: 30px;
     line-height: 35px;
   }

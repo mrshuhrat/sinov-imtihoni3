@@ -1,0 +1,194 @@
+.servisec {
+  margin-bottom: 40px;
+}
+
+.servisec__text-wrapper {
+  position: relative;
+  z-index: 1;
+  max-width: 744px;
+  padding: 0 110px;
+  padding-top: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  background-image: url("../img/sections-bg.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.servisec__text-wrapper::before {
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  width: 50px;
+  height: 3px;
+  content: "";
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: $secondary-color;
+}
+
+.services__heading {
+  margin: 0;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 42px;
+}
+
+.services__text {
+  margin: 0;
+  margin-bottom: 15px;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  color: #4D4D4D;
+}
+
+.services__slider-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.servisec__list {
+  @include reset-list;
+  padding: 25px 0;
+  max-width: 1005px;
+  display: flex;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.services__item {
+  display: flex;
+  flex-direction: column;
+  padding: 28px 60px 24px 60px;
+  width: 200px;
+  text-align: center;
+  background: #fff;
+  box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  flex-shrink: 0;
+  margin-left: 17px;
+  margin-right: 17px;
+}
+
+.services__name {
+  margin: 0;
+  margin-bottom: 12px;
+  font-size: 18px;
+  line-height: 21px;
+  flex-grow: 1;
+}
+
+.services__name::before {
+  display: block;
+  width: 70px;
+  height: 70px;
+  content: "";
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 13px;
+  background-position: center center;
+}
+
+.treatment1::before {
+  background-image: url("../img/treatment1.png");
+}
+
+.hygiene::before {
+  background-image: url("../img/hygiene.png");
+}
+
+.diagnostics::before {
+  background-image: url("../img/diagnostis.png");
+}
+
+.child-dentist::before {
+  background-image: url("../img/child-dentist.png");
+}
+
+.services__price {
+  position: relative;
+  z-index: 1;
+  padding-top: 13px;
+}
+
+.services__price::before {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  width: 25px;
+  height: 2px;
+  content: "";
+  background-color: #0A60C3;
+}
+
+.old-price {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: rgba(0, 0, 0, 0.25);
+}
+
+.new-price {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #0A60C3;
+}
+
+.services__slider-btn {
+  width: 42px;
+  height: 49px;
+  border: 2px solid #1D6ECB;
+  border-radius: 5px;
+  background-color: #fff;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+
+.services__btn-prev {
+  margin-left: 20px;
+  background-image: url("../../img/prev-bg.png");
+}
+
+.services__btn-next {
+  margin-right: 20px;
+  background-image: url("../../img/next-bg.png");
+}
+
+@include breakpoint-down (1024px) {
+  .servisec__list {
+    max-width: 775px;
+  }
+}
+
+@include breakpoint-down (905px) {
+  .servisec__text-wrapper {
+    padding: 0 50px;
+  }
+
+  .services__slider-btn {
+    display: none;
+  }
+}
+
+@include breakpoint-down (375px) {
+  .servisec__list {
+    max-width: 301px;
+  }
+
+  .servisec__text-wrapper {
+    padding-top: 16px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}

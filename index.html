@@ -93,6 +93,7 @@
   ======================= -->
   <main class="main">
 
+    <!-- INTRO-SECTIO  -->
     <section class="intro">
 
       <picture>  
@@ -122,6 +123,129 @@
           <p class="intro__paragraph">Modern technology and expert-class dentists</p>
           <h2 class="intro__heading">get a brilliant smile for every day</h2>
           <a class="button" href="#">Get</a>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="appointment">
+      <div class="container appointment__container">
+
+        <ul class="appointment__list">
+          <li class="appointment__item">
+            <h4 class="appointment__list-heading treatment">Treatment</h4>
+            <p class="appointment__list-paragraph">All types of dental treatment are carried out using the most modern technologies.</p>
+          </li>
+          <li class="appointment__item">
+            <h4 class="appointment__list-heading prosthetics">Prosthetics</h4>
+            <p class="appointment__list-paragraph">We will help you find the most convenient and aesthetically attractive version of the prosthesis.</p>
+          </li>
+        </ul>
+
+        <form class="form" action="https://echo.htmlacademy.ru" method="POST">
+          <h3 class="form__heading">Appointment</h3>
+
+          <label class="visually-hidden" for="name-input">Name</label>
+          <input class="form__input" type="text" name="name" id="name-input" placeholder="Name" required>
+
+          <label class="visually-hidden" for="phone-input">Phone</label>
+          <input class="form__input" type="tel" name="phone" id="phone-input" placeholder="Phone" required>
+
+          <button class="form__button" type="button">Appointment</button>
+
+          <div class="form__chackbox-wrapper">
+            <label class="form__chackbox-label" for="chackbox-input">
+              <span class="form__chackbox-text">I give my consent to the storage and processing of personal data</span>
+             <input class="form__chackbox" type="checkbox" name="chackbox" id="chackbox-input">
+            </label>
+          </div>
+
+        </form>
+
+      </div>
+    </section>
+
+
+    <!-- SERVISES SECTION -->
+
+    <section class="services">
+      <div class="container">
+        <div class="servisec__text-wrapper">
+          <h2 class="services__heading">Services</h2>
+          <p class="services__text">We provide a wide range of services from treatment to prosthetics. Therefore, you do not need to go anywhere else.</p>
+        </div>
+
+        <div class="services__slider-wrapper">
+          <button class="services__slider-btn services__btn-prev">
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <ul class="servisec__list">
+            <li class="services__item">
+              <h4 class="services__name treatment1">Dental treatment</h4>
+              <div class="services__price">
+                <del class="old-price">5000₽</del>
+                <span class="new-price">3100₽</span>
+              </div>
+            </li>
+            <li class="services__item">
+              <h4 class="services__name hygiene">Hygiene</h4>
+              <div class="services__price">
+                <del class="old-price">6000₽</del>
+                <span class="new-price">4600₽</span>
+              </div>
+            </li>
+            <li class="services__item">
+              <h4 class="services__name diagnostics">Diagnostics</h4>
+              <div class="services__price">
+                <del class="old-price">1000₽</del>
+                <span class="new-price">FREE</span>
+              </div>
+            </li>
+            <li class="services__item">
+              <h4 class="services__name child-dentist">Children’s dentistry</h4>
+              <div class="services__price">
+                <del class="old-price">5000₽</del>
+                <span class="new-price">3100₽</span>
+              </div>
+            </li>
+            <li class="services__item">
+              <h4></h4>
+              <div>
+                <span></span>
+                <span></span>
+              </div>
+            </li>
+          </ul>
+          <button class="services__slider-btn services__btn-next">
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- MODERN TECHNOLOGY SECTION -->
+
+    <section class="technology">
+      <div class="container--wide">
+        <img src="img/technology-img.png" srcset="img/technology-img.png 1x, img/technology-img@2x.png 2x" alt="technology img">
+        <div>
+          <h2></h2>
+          <p></p>
+          <ul>
+            <li>
+              <h3></h3>
+              <p></p>
+            </li>
+            <li>
+              <h3></h3>
+              <p></p>
+            </li>
+            <li>
+              <h3></h3>
+              <p></p>
+            </li>
+          </ul>
         </div>
       </div>
     </section>

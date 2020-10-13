@@ -1,0 +1,66 @@
+.form {
+  width: 540px;
+  right: 20px;
+  top: 0;
+  bottom: 0;
+  margin-top: -60px;
+  padding: 25px 34px 18px 33px;
+  display: flex;
+  flex-direction: column;
+  background-color: $main-color;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.form__heading {
+  margin: 0;
+  margin-bottom: 29px;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 42px;
+}
+
+.form__input {
+  margin-bottom: 12px;
+  padding-top: 21px;
+  padding-bottom: 20px;
+  padding-left: 14px;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid #FFFFFF;
+  background-color: $main-color;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.form__button {
+  margin-bottom: 22px;
+  display: inline-block;
+  max-width: 230px;
+  padding: 17px 63px;
+  border: none;
+  border-radius: 5px;
+  background-color: $secondary-color;
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 21px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.form__chackbox-wrapper {
+  display: flex;
+}
+
+.form__chackbox-text {
+  max-width: 256px;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+@include breakpoint-down (375px) {
+  .form {
+    width: 375px;
+  }
+}

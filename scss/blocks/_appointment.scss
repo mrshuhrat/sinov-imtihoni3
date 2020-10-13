@@ -1,0 +1,77 @@
+.appointment {
+  margin-bottom: 70px;
+}
+
+.appointment__container {
+  position: relative;
+  z-index: 1;
+  display: flex;
+}
+
+.appointment__list {
+  @include reset-list;
+  display: flex;
+}
+
+.appointment__list-heading {
+  margin: 0;
+  margin-bottom: 4px;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.treatment::before {
+  display: block;
+  width: 87px;
+  height: 87px;
+  margin-left: auto;
+  margin-right: auto;
+  content: "";
+  background-image: url("../img/treatment.png");
+  mix-blend-mode: multiply;
+  margin-bottom: 19px;
+}
+
+.prosthetics::before {
+  display: block;
+  width: 87px;
+  height: 87px;
+  margin-left: auto;
+  margin-right: auto;
+  content: "";
+  background-image: url("../img/prosthetics.png");
+  mix-blend-mode: multiply;
+  margin-bottom: 19px;
+}
+
+.appointment__list-paragraph {
+  margin: 0;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.appointment__item {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 39px 37px 56px 36px;
+  max-width: 300px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.appointment__item:first-child {
+  background-color: $secondary-color;
+}
+
+.appointment__item:last-child {
+  background-color: #ffe040;
+}
+
+@include breakpoint-down (905px) {
+
+  .appointment__list {
+    display: none;
+  }
+}
