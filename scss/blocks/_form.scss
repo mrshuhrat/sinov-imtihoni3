@@ -46,6 +46,16 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  outline: none;
+  transition: opacity 0.3s ease;
+}
+
+.form__button:hover {
+  opacity: 0.8;
+}
+
+.form__button:active {
+  opacity: 0.6;
 }
 
 .form__chackbox-wrapper {

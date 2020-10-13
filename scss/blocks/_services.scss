@@ -1,5 +1,6 @@
-.servisec {
-  margin-bottom: 40px;
+.services {
+  margin-bottom: 50px;
+  color: $text-color;
 }
 
 .servisec__text-wrapper {
@@ -153,6 +154,16 @@
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center center;
+  transition: box-shadow 0.3s ease;
+  outline: none;
+}
+
+.services__slider-btn:hover {
+  box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.6);
+}
+
+.services__slider-btn:active {
+  opacity: 0.6;
 }
 
 .services__btn-prev {
