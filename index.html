@@ -355,7 +355,50 @@
     <!-- LOCATION SECTION -->
 
     <section class="location">
-      
+      <div class="container">
+        <div class="location__info">
+          <h2 class="location__heading">Convenient location and working hours</h2>
+          <p class="location__text">Our clinic is located in the center of the Sverdlovsk district, at the address: Raboche-Krestyanskaya Street 6. From the bus stop “Family” hypermarket to our dental clinic - 5 minutes on foot.</p>
+        </div>
+      </div>
+
+      <a href="https://www.google.com/maps/" target="_blank">
+        <picture>  
+          <!-- max-width 375px -->
+          <source media="(max-width:375px)" srcset="img/map-375.jpg 1x, img/map-375@2x.jpg 2x">
+    
+          <!-- max-width 1024px -->
+          <source media="(max-width:1024px)" srcset="img/map-1024.jpg 1x, img/map-1024@2x.jpg 2x">
+    
+          <!-- Default image webp -->
+          <source type="image/webp" srcset="img/map.webp 1x, img/map@2x.webp 2x">
+    
+          <!-- Default image -->
+          <img class="location__img" src="img/map.jpg" srcset="img/map.jpg 1x, img/map@2x.jpg 2x" alt="location img" width="1920" height="760">
+        </picture>
+      </a>
+
+      <div class="container location__container">
+        <form class="form location__form" action="https://echo.htmlacademy.ru" method="POST">
+          <h3 class="form__heading">Appointment</h3>
+
+          <label class="visually-hidden" for="locatio-name-input">Name</label>
+          <input class="form__input" type="text" name="name" id="locatio-name-input" placeholder="Name" required>
+
+          <label class="visually-hidden" for="location-phone-input">Phone</label>
+          <input class="form__input" type="tel" name="phone" id="location-phone-input" placeholder="Phone" required>
+
+          <button class="form__button" type="button">Appointment</button>
+
+          <div class="form__chackbox-wrapper">
+            <label class="form__chackbox-label" for="location-chackbox-input">
+              <span class="form__chackbox-text">I give my consent to the storage and processing of personal data</span>
+             <input class="form__chackbox" type="checkbox" name="chackbox" id="location-chackbox-input">
+            </label>
+          </div>
+
+        </form>
+      </div>
     </section>
   </main>
 
